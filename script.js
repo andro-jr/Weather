@@ -46,14 +46,3 @@ const getWeatherDetails = async (lat,lng) =>{
         console.error(`Error: ${err}`);
     }
 }
-
-
-
-
-
-// 
-// let a = 3;
-// if(a%2==0)
-//     alert('number is even')
-// else
-//     alert('number is odd');
