@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.weather-status{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+}
+.data-container{
+    display: flex;
+    gap: 30px;
+}
+.data{
+    font-size: 22px;
+    position: relative;
+}
+.status{
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+    letter-spacing: 1px;
+}
+.temperature{
+    font-size: 64px;
+    font-weight: 600;
+    position: relative;
+}
+.degree{
+    position: absolute;
+    right: 10px;
+    top:10px;
+}
+.axuiliary-data{
+    color: gray;
+    font-size: 20px;
+}
+.axuiliary-data span{
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+}
+.time-status{
+    margin-top: 40px;
+    font-size: 12px;
+    color: gray;
+    font-weight: 600;
+}
