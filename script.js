@@ -39,7 +39,7 @@ const loadWeatherData = data =>{
 
 const getWeatherDetails = async (lat,lng) =>{
     try{
-        const req = await fetch(`http://api.weatherapi.com/v1/current.json?key=a3338513d0294710acf180535230104 &q=${lat},${lng}&aqi=yes`);
+        const req = await fetch(`https://api.weatherapi.com/v1/current.json?key=a3338513d0294710acf180535230104 &q=${lat},${lng}&aqi=yes`);
         const data = await req.json();
         loadWeatherData(data);
     }catch(err){
