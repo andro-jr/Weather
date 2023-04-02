@@ -7,6 +7,7 @@ const precipi = document.querySelector('.prec');
 const statusImg = document.querySelector('.status-img');
 const status = document.querySelector('.status');
 const timeStatus = document.querySelector('.as-of');
+const weatherContainer = document.querySelector('.weather-container');
 
 
 const getCurrentPosition = () => {
@@ -27,6 +28,7 @@ const getCurrentPosition = () => {
 getCurrentPosition();
 
 const loadWeatherData = data =>{
+    weatherContainer.classList.remove('hide');
     loc.innerText = data.location.name;
     temp.innerText = data.current.temp_c;
     humid.innerText = data.current.humidity;
