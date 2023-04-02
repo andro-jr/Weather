@@ -9,7 +9,7 @@ const status = document.querySelector('.status');
 const timeStatus = document.querySelector('.as-of');
 const weatherContainer = document.querySelector('.weather-container');
 
-
+// Getting cuttent position
 const getCurrentPosition = () => {
     if (navigator.geolocation){
         navigator.geolocation.getCurrentPosition(
@@ -24,9 +24,10 @@ const getCurrentPosition = () => {
     }
         
 }
-
+// Initialize get function
 getCurrentPosition();
 
+// Render the data
 const loadWeatherData = data =>{
     weatherContainer.classList.remove('hide');
     loc.innerText = data.location.name;
@@ -39,6 +40,7 @@ const loadWeatherData = data =>{
     timeStatus.innerText = data.current.last_updated;
 };
 
+// API call 
 const getWeatherDetails = async (lat,lng) =>{
     try{
         const req = await fetch(`https://api.weatherapi.com/v1/current.json?key=a3338513d0294710acf180535230104 &q=${lat},${lng}&aqi=yes`);

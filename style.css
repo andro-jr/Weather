@@ -46,7 +46,7 @@ body{
 }
 .degree{
     position: absolute;
-    right: 10px;
+    right: -5px;
     top:10px;
 }
 .axuiliary-data{
